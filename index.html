@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikrodev</title>
+  <meta name="description" content="Mikrodev makes small, useful apps. Home of Sprout, the shared grocery list.">
+  <link rel="canonical" href="https://mikrodev.net/">
+  <link rel="icon" href="/assets/sprout.png" type="image/png">
+  <style>
+    @font-face { font-family: "Outfit"; src: url("/assets/fonts/outfit-var.woff2") format("woff2"); font-weight: 100 900; font-display: swap; }
+    :root { --bg: #f2f2ee; --ink: #1c1f1d; --muted: #4f5652; --line: rgb(28 31 29 / .14); --card: #fbfbf8; --accent: #2f5233; color-scheme: light dark; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #121413; --ink: #e9ece9; --muted: #a7aea9; --line: rgb(233 236 233 / .14); --card: #1a1d1b; --accent: #93c595; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100dvh; display: flex; flex-direction: column; background: var(--bg); color: var(--ink);
+      font-family: "Outfit", system-ui, sans-serif; font-size: 1.0625rem; line-height: 1.6; }
+    main { flex: 1; width: 100%; max-width: 880px; margin: 0 auto; padding: 88px 20px 48px; }
+    h1 { font-size: clamp(2.6rem, 7vw, 4.2rem); letter-spacing: -0.04em; line-height: 1; margin: 0 0 16px; }
+    p.lede { color: var(--muted); font-size: 1.25rem; max-width: 36ch; margin: 0 0 56px; }
+    a.app { display: grid; grid-template-columns: 72px 1fr auto; gap: 20px; align-items: center; text-decoration: none; color: inherit;
+      background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px 24px; transition: border-color .15s ease; }
+    a.app:hover { border-color: var(--accent); }
+    a.app img { width: 72px; height: 72px; border-radius: 16px; }
+    a.app strong { display: block; font-size: 1.3rem; }
+    a.app span { color: var(--muted); }
+    a.app .go { color: var(--accent); font-weight: 600; white-space: nowrap; }
+    :focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    footer { width: 100%; max-width: 880px; margin: 0 auto; padding: 24px 20px 40px; color: var(--muted); font-size: .95rem; border-top: 1px solid var(--line); }
+    footer a { color: inherit; }
+    @media (max-width: 520px) { a.app { grid-template-columns: 56px 1fr; } a.app img { width: 56px; height: 56px; } a.app .go { grid-column: 1 / -1; } main { padding-top: 56px; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Mikrodev</h1>
+  <p class="lede">Small, useful apps from an independent developer.</p>
+  <a class="app" href="https://sprout-support.mikrodev.net/">
+    <img src="/assets/sprout.png" alt="" width="72" height="72">
+    <div><strong>Sprout</strong><span>Grocery lists and inventories, shared live with the people you shop with.</span></div>
+    <span class="go">Visit Sprout</span>
+  </a>
+</main>
+<footer>&copy; 2026 Adrian Lara Guzman. Questions about an app? Each app's site has its own support page.</footer>
+</body>
+</html>
